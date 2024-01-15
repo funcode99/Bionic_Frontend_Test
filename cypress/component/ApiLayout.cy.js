@@ -65,8 +65,6 @@ describe("access.input", () => {
     cy.get("#file_input")
     .as("fileInput")
     cy.uploadFile("star.png")
-    // untuk memastikan input sudah terupdate
-    // harus dikasih garing dua kali baru valid
     cy.get('@fileInput').should('have.value', 'C:\\fakepath\\star.png')
     cy.get('.v-toast__text').should('exist');
   })
@@ -75,9 +73,7 @@ describe("access.input", () => {
 
 // describe("access.text.input", () => {
 //   it("show text input data", () => {
-//     // komponen wajib dimasukin
 //     cy.mount(ApiLayout);
-//     // Input nya dari sini cuy ternyata wkwkwkwk
 //     cy.get("[data-cy='message']").type('berisi').invoke('val').then(value => cy.log(value))
 //   })
 // })
