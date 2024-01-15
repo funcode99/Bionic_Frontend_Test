@@ -1,0 +1,2 @@
+1.SELECT DISTINCT item FROM asset
+2.SELECT user_id, GROUP_CONCAT(item) FROM asset GROUP BY user_id

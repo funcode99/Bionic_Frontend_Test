@@ -1,0 +1,8 @@
+Cypress = Unit testing yang memiliki fungsi seperti Selenium, yaitu mengetes apakah sebuah fungsi/fitur di aplikasi sesuai dengan ekspektasi (sesuai skenario) atau tidak meskipun program nya tidak error (mengetes ada nya bug & error)
+Kubernetes = Untuk mengatur, otomasi tugas2 yang berulang & distribusi docker container
+ORM = Adalah sebuah tools (alat bantu) untuk melakukan query database dengan cepat, kelebihan = menambah produktivitas, kekurangan = mengurangi performance aplikasi
+Class = Merupakan sebuah "cetakan" untuk membuat objek yang berisi variabel, constructor & method
+Function = Sesuatu yang dapat melakukan aksi saat dipanggil
+DevOps = Proses kolaborasi antara Developer & Tim Infra untuk melakukan deliver software dengan menggunakan alat otomasi (automation tools) agar proses deliver dapat lebih cepat & berkualitas
+Docker = Sebuah tools untuk melakukan containerization, berbeda dengan VM, container berfokus ke sisi aplikasi,container Berjalan di atas aplikasi container manager yang berjalan di OS. Di Container, kita bisa memaket kan aplikasi & dependency nya tanpa harus digabung dengan OS
+Container menggunakan OS dari OS Host milik Container Manager, maka akan lebih hemat resource & lebih cepat jalan nya, ukuran nya juga lebih kecil dibanding VM

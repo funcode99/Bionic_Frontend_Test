@@ -1,0 +1,4 @@
+Arsitektur terbaik
+1.Progressive Web App (PWA)	= Dengan PWA, pengguna bisa "menginstall" aplikasi browser di dalam perangkat mereka (Desktop, Tablet, Mobile) sehingga dapat mengakses aplikasi web tersebut meski dalam keadaan offline di perangkat apapun.
+2.Single Page Application (SPA) = Dengan SPA, pengguna dapat mengakses web tanpa harus mereload halaman untuk berpindah ke halaman web yang lain, karena semua halaman sudah berada di satu halaman yang sama, sehingga akan meningkatkan user experience dalam penggunaan aplikasi
+3.Client-Server

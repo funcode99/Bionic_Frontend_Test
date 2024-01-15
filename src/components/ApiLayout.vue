@@ -1,18 +1,11 @@
 <script setup>
 import Api from "../utils/api/index";
-import { ref, onBeforeMount, watch } from "vue";
-import CollapseTransition from "@ivanv/vue-collapse-transition/src/CollapseTransition.vue";
+import { ref, onBeforeMount } from "vue";
 import { useToast } from "vue-toast-notification";
 import 'vue-toast-notification/dist/theme-sugar.css';
-// import { configureCompat } from 'vue'
-
-// configureCompat({
-//   compatConfig: { MODE: 3 }
-// })
 
 const toast = useToast()
 let instanceArray = ref([]);
-
 const fetch = async () => {
   try {
     const api = await Api.get("pt-job-posts/no-auth");
@@ -22,15 +15,10 @@ const fetch = async () => {
     console.log("terjadi error!");
   }
 };
-
 const onFileSelected = (event) => {
   const file = event.target.files[0];
   filename.value = file.name;
-  // selectedImage.value = file ? file : null;
-  // tempItem.value[ind].attachment = selectedImage.value;
-  // tempItem.value[ind].id = dataId;
 };
-
 onBeforeMount(() => {
   fetch();
 });
@@ -90,7 +78,6 @@ const callPostAPI = async () => {
         </div>
 
           <div class="collapse" :id="`collapseExample-${index}`">
-            
             <div v-html="data.description.txt"></div>
           </div>
        
@@ -145,7 +132,7 @@ const callPostAPI = async () => {
           <h5>File</h5>
           <input
             type="file"
-            id="logo_company"
+            id="file_input"
             accept="image/*"
             @change="onFileSelected($event)"
           />
