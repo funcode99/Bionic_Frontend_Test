@@ -1,0 +1,30 @@
+{
+  "name": "test-bionic",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@ivanv/vue-collapse-transition": "^1.0.2",
+    "axios": "^1.6.5",
+    "bootstrap": "^5.3.2",
+    "vue": "^3.4.13",
+    "vue-router": "^4.2.5",
+    "vue-toast-notification": "^3.1.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.5.2",
+    "autoprefixer": "^10.4.16",
+    "cy-verify-downloads": "^0.2.3",
+    "cypress": "^13.6.2",
+    "cypress-file-upload": "^5.0.8",
+    "postcss": "^8.4.33",
+    "tailwindcss": "^3.4.1",
+    "vite": "^5.0.8",
+    "webpack": "^5.89.0"
+  }
+}
