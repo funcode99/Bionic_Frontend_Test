@@ -24,6 +24,6 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-// TERNYATA SUMBER ERROR NYA GARA2 INI, ANJING LAH
+// TERNYATA SUMBER ERROR NYA GARA2 INI
 import "cypress-file-upload";
 // import "cypress-verify-downloads"

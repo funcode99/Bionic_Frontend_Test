@@ -13,9 +13,9 @@ Cypress.Commands.add("uploadFile", (fileName) => {
 describe("access.input", () => {
 
   it("show text input data", () => {
-    // komponen wajib dimasukin
+   
     cy.mount(ApiLayout);
-    // Input nya dari sini cuy ternyata wkwkwkwk
+   
     cy.get("[data-cy='message']").type('berisi').invoke('val').then(value => cy.log(value))
   })
   
@@ -33,17 +33,17 @@ describe("access.input", () => {
         })
       })
 
-      // Error handling nya kaya begini ternyata
+  
       // cy.get("@fileInput").attachFile('example.json')
       // cy.contains("Error: Invalid file format")
 
-        // bisa pakai attachFile juga ternyata, membaca dari folder fixture
+        
         // .attachFile("example.json")
         // .attachFile("star.png")
         // .readFile("src/assets/star.png")
         
         // .selectFile("src/assets/star.png");
-      // oalah, ternyata val itu fungsi bawaan dari cypress toh
+
       cy.get("#file_input").invoke('val').then(inputValue => cy.log(inputValue))
       cy.get("[data-cy='submit']").click()
       
@@ -56,7 +56,7 @@ describe("access.input", () => {
 
       // .contains("Berhasil!")
       // .should('have.text', "Berhasil!")
-      // pasti gagal, karena backend nya sudah error dari sana nya
+    
       cy.get(".v-toast__text").contains("Gagal!").should('have.text', "Gagal!")
   });
 
